@@ -1,55 +1,44 @@
 body {
-    perspective: 160px;
-    perspective-origin: center 40vh;
-    background: #222;
-    overflow: hidden;
-}
-
-#vp {
-    position: relative;
-    overflow: hidden;
-    transform-origin: 50% 50%;
+    perspective:160px;
+    perspective-origin:center 40vh;
+    background:#222;
+    overflow:hidden;
+  }
+  
+  #vp {
+    position:relative;
+    overflow:hidden;
+    transform-origin:50% 50%;
     mask-image:
-        linear-gradient(to right, black 30%, transparent 70%);
-    height: 100vh;
-    width: 100vw;
-    animation: g 3s forwards reverse;
-}
-
-@keyframes g {
+      linear-gradient(to right, black 30%, transparent 70%);
+    height:100vh;
+    width:100vw;
+    animation:g 3s forwards reverse;
+  } @keyframes g {
     from {
-        transform: rotateY(0)rotateX(0);
+      transform:rotateY(0)rotateX(0);
     }
-
     20%, to {
-        transform: rotateY(90deg)rotateX(90deg);
+      transform:rotateY(90deg)rotateX(90deg);
     }
-}
-
-#elcode {
-    word-break: break-all;
-    font: 1em monospace;
-    background: #222;
-    text-align: justify;
-    overflow: hidden;
-    animation: f 200s linear infinite;
-}
-
-@keyframes f {
-    from {
-        transform: translate3d(0, 0, 0)
-    }
-
-    to {
-        transform: translate3d(0, -80%, 0)
-    }
-}
-
-#elsign {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    text-align: right;
-    color: #fff;
-    font: 1em monospace;
-}
+  }
+  
+  #elcode {
+    word-break:break-all;
+    font:1em monospace;
+    background:#222;
+    text-align:justify;
+    overflow:hidden;
+    animation:f 200s linear infinite;
+  } @keyframes f {
+    from {transform:translate3d(0,0,0)}
+    to {transform:translate3d(0,-80%,0)}
+  }
+  
+  #elsign {
+    position:fixed; z-index:1;
+    width:100%; text-align:right;
+    color:#fff;
+    font:1em monospace;
+  }
+  
